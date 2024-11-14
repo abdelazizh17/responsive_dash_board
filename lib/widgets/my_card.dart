@@ -13,6 +13,7 @@ class MyCard extends StatelessWidget {
       child: Container(
         decoration: ShapeDecoration(
           image: const DecorationImage(
+            fit: BoxFit.fill,
             image: AssetImage(
               'assets/images/cardbackground.png',
             ),
