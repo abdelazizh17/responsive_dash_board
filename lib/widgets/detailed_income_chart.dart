@@ -44,7 +44,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
         ),
         PieChartSectionData(
           titlePositionPercentageOffset: activeIndex == 1 ? 2.2 : null,
-          title: activeIndex == 1 ? 'Design produ(context)ct' : '25%',
+          title: activeIndex == 1 ? 'Design product' : '25%',
           titleStyle: AppStyles.styleBold16(context)
               .copyWith(color: activeIndex == 1 ? null : Colors.white),
           radius: activeIndex == 1 ? 60 : 50,
