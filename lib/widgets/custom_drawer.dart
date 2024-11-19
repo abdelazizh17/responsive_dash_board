@@ -12,6 +12,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.sizeOf(context).width * .7,
       color: Colors.white,
       child: const CustomScrollView(
         slivers: [
@@ -19,8 +20,8 @@ class CustomDrawer extends StatelessWidget {
             child: UserInfoListTile(
               infoModel: UserInfoModel(
                 image: Assets.imagesAvatar3,
-                title: 'demo@gmail.com',
-                subtitle: 'Lekan Okeowo',
+                title: 'Lekan Okeowo',
+                subtitle: 'demo@gmail.com',
               ),
             ),
           ),

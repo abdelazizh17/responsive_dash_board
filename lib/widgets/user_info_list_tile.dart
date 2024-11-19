@@ -5,7 +5,8 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 
 class UserInfoListTile extends StatelessWidget {
   const UserInfoListTile({
-    super.key, required this.infoModel,
+    super.key,
+    required this.infoModel,
   });
   final UserInfoModel infoModel;
   @override
@@ -17,11 +18,11 @@ class UserInfoListTile extends StatelessWidget {
         leading: SvgPicture.asset(infoModel.image),
         title: Text(
           infoModel.title,
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           infoModel.subtitle,
-          style: AppStyles.styleRegular12,
+          style: AppStyles.styleRegular12(context),
         ),
       ),
     );
